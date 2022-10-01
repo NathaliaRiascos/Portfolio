@@ -1,0 +1,101 @@
+.nav {
+  text-align: center;
+  height: 4.25em;
+  cursor: default;
+}
+
+
+.nav ul li {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  width: 1em;
+  cursor: pointer;
+  height: 1em;
+  line-height: 0.9em;
+  font-size: 2.5em;
+  margin: 0 0.25em 0 0.25em;
+  opacity: 0.35;
+  outline: 0;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+  -ms-transition: opacity .25s ease-in-out;
+  transition: opacity .25s ease-in-out;
+}
+
+.nav ul li:before {
+  font-size: 0.8em;
+}
+
+.nav ul li svg:before {
+  padding-right: 0;
+}
+
+
+.nav ul li:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -0.75em;
+  margin-left: -0.5em;
+  border-bottom: solid 0em #ffffff;
+  border-left: solid 0.5em transparent;
+  border-right: solid 0.5em transparent;
+  -moz-transition: border-bottom-width .25s ease-in-out;
+  -webkit-transition: border-bottom-width .25s ease-in-out;
+  -ms-transition: border-bottom-width .25s ease-in-out;
+  transition: border-bottom-width .25s ease-in-out;
+}
+
+.nav ul li:hover,
+.nav ul li:hover span {
+  opacity: 1.0;
+}
+
+.nav ul li.active {
+  opacity: 1.0;
+}
+
+.nav ul li.active:after {
+  border-bottom-width: 0.5em;
+}
+
+.nav ul li span {
+  display: block;
+  position: absolute;
+  background: #222222;
+  color: #ffffff;
+  top: -2.85em;
+  font-size: 0.3em;
+  height: 2.25em;
+  line-height: 2.25em;
+  left: 50%;
+  opacity: 0;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+  -ms-transition: opacity .25s ease-in-out;
+  transition: opacity .25s ease-in-out;
+  width: 5.5em;
+  margin-left: -2.75em;
+}
+
+.nav ul li span:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -0.4em;
+  left: 50%;
+  margin-left: -0.6em;
+  border-top: solid 0.6em #222222;
+  border-left: solid 0.6em transparent;
+  border-right: solid 0.6em transparent;
+}
+
+@media screen and (max-width: 980px) {
+
+  .nav ul li span {
+    display: none;
+  }
+
+}
