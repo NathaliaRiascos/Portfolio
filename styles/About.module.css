@@ -1,0 +1,23 @@
+.skills h2 {
+  margin-bottom: 1.2em;
+}
+.container__skills{
+  display: grid;
+}
+
+.icon svg{
+  font-size: 18px;
+}
+
+.container__info {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+@media (min-width: 640px){
+  .container__skills {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+}

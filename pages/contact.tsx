@@ -6,7 +6,7 @@ const Contact: NextPage = () => {
   return (
     <main className={stylesPanel.panel}>
       <header>
-        <h1>Contact Me</h1>
+        <h1>Contáctame</h1>
       </header>
       <section>
         <Form />

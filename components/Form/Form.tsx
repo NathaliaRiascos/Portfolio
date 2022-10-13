@@ -7,21 +7,21 @@ const Form = () => {
         className={styles.input}
         type='text'
         name='name'
-        placeholder='Name'
+        placeholder='Nombre'
       />
       <input 
         className={styles.input}
         type='text'
         name='email'
-        placeholder='Email'
+        placeholder='Correo electronico'
       />
       <textarea 
         className={styles.textarea}
         name='message'
-        placeholder='Message'
+        placeholder='Escribe tu mensaje'
         rows={6}>
       </textarea>
-      <input type='submit' value='Send Message' />
+      <input type='submit' value='Enviar mensaje' />
     </form>
   )
 }

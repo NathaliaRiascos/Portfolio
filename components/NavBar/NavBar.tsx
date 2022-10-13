@@ -35,10 +35,10 @@ const NavBar = () => {
   return (
     <nav className={styles.nav}>
       <ul>
-        <CustomLink href='/' text='Home' icon={faHouse} />
-        <CustomLink href='/about-me' text='About me' icon={faUser} />
-        <CustomLink href='/projects' text='Projects' icon={faFolder} />
-        <CustomLink href='/contact' text='Contact' icon={faEnvelope} />
+        <CustomLink href='/' text='Inicio' icon={faHouse} />
+        <CustomLink href='/about-me' text='Sobre mí' icon={faUser} />
+        <CustomLink href='/projects' text='Proyectos' icon={faFolder} />
+        <CustomLink href='/contact' text='Contacto' icon={faEnvelope} />
       </ul>
 		</nav>
   )
