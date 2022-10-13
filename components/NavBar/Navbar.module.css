@@ -64,8 +64,8 @@
 .nav ul li span {
   display: block;
   position: absolute;
-  background: #222222;
-  color: #ffffff;
+  background: #ffffff;
+  color: var(--primary);
   top: -2.85em;
   font-size: 0.3em;
   height: 2.25em;
@@ -87,7 +87,7 @@
   bottom: -0.4em;
   left: 50%;
   margin-left: -0.6em;
-  border-top: solid 0.6em #222222;
+  border-top: solid 0.6em #fff;
   border-left: solid 0.6em transparent;
   border-right: solid 0.6em transparent;
 }

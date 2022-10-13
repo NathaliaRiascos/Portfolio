@@ -9,13 +9,13 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--primary:  #1e1e1e;
+}
 body {
-	background-image: url("/images/overlay.png"), url("/images/bg.jpg");
-	background-repeat: repeat, no-repeat;
-	background-size: auto, 100% 100%;
 	font-size: 1em;
 	font-family: 'Source Sans Pro', sans-serif;
-	background-attachment: fixed;
+	background-color: var(--primary);
 	color: black;
 	overflow-y: scroll;
 }
@@ -97,14 +97,6 @@ h2 {
 	letter-spacing: -0.015em;
 }
 
-h3,
-h4,
-h5,
-h6 {
-	font-size: 1.25em;
-	letter-spacing: -0.015em;
-}
-
 @media screen and (max-width: 736px) {
 
 	h1 {
@@ -124,73 +116,10 @@ h6 {
 
 }
 
-blockquote {
-	border-left: solid 0.5em #ddd;
-	padding: 1em 0 1em 2em;
-	font-style: italic;
-}
-
-em,
-i {
-	font-style: italic;
-}
-
-hr {
-	border: 0;
-	border-top: solid 1px #ddd;
-	padding: 1.5em 0 0 0;
-	margin: 1.75em 0 0 0;
-}
-
-sub {
-	position: relative;
-	top: 0.5em;
-	font-size: 0.8em;
-}
-
-sup {
-	position: relative;
-	top: -0.5em;
-	font-size: 0.8em;
-}
-
-br.clear {
-	clear: both;
-}
-
-p,
-ul,
-ol,
-dl,
-table,
-blockquote,
 form {
 	margin-bottom: 2em;
 }
 
-/* Table */
-
-table {
-	width: 100%;
-}
-
-table.default tbody tr {
-	border-bottom: solid 1px #f4f4f4;
-}
-
-table.default td {
-	padding: 0.5em 1em 0.5em 1em;
-}
-
-table.default th {
-	text-align: left;
-	font-weight: 400;
-	padding: 0.5em 1em 0.5em 1em;
-}
-
-table.default thead {
-	border-bottom: solid 2px #f4f4f4;
-}
 
 /* Form */
 
@@ -246,10 +175,6 @@ form ::-moz-placeholder {
 
 form :-ms-input-placeholder {
 	color: #999;
-}
-
-header {
-	margin: 0 0 1.5em 0;
 }
 
 header>p {
