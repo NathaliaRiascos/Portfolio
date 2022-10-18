@@ -49,9 +49,6 @@ const About: NextPage = () => {
             He ido aprendiendo poco a poco sobre la marcha UX/UI y las siguientes tecnologías:
           </p>
         </section>
-        
-     
-      
       <section className={styles.skills}>
         <h2>Skills</h2>
         <ul className={styles.container__skills}>
