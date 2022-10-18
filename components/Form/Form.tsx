@@ -1,12 +1,17 @@
-import { useState, MouseEvent, ChangeEvent } from 'react'
+import { useState, MouseEvent, ChangeEvent, SyntheticEvent } from 'react'
 import styles from './Form.module.css'
 import { ToastContainer, toast } from 'react-toastify'
 import emailjs from '@emailjs/browser'
 
+// type Error = {
+//   nombre?: string,
+//   correo?: string,
+//   mensaje?: string
+// }
+
+
 interface Error {
-  nombre: string,
-  correo: string,
-  mensaje: string
+  [key: string]: string;
 }
 
 const initialState = {
@@ -19,10 +24,10 @@ const Form = () => {
   const [errors, setErrors] = useState<Error>(initialState)
 
 
-  const validate = (e: MouseEvent<HTMLFormElement>) => {
-    const data = Object.fromEntries(new FormData(e.target))
+  const validate = (e: SyntheticEvent) => {
+    const data = Object.fromEntries(new FormData(e.target as HTMLFormElement))
 
-    const tempErrors = {}
+    const tempErrors: Error = {}
     const text = 'no puede estar vacio'
     for (let key in data) {
       if (!data[key]) tempErrors[key] = `Por favor digita tu ${key}, ${text}`
@@ -31,10 +36,10 @@ const Form = () => {
     setErrors(tempErrors)
   }
 
-  const handleSubmit = async (e: MouseEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: SyntheticEvent) => {
     e.preventDefault()
     validate(e)
-    if (Object.keys(errors).length === 0) return
+    if (Object.keys(errors).length !== 0) return
     try {
       await emailjs.sendForm(
         process.env.NEXT_PUBLIC_SERVICE_ID, 
