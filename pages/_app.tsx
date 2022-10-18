@@ -4,6 +4,7 @@ import { Wrapper } from '../components'
 
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import 'react-toastify/dist/ReactToastify.css'
 config.autoAddCss = false
 
 function MyApp({ Component, pageProps }: AppProps) {
