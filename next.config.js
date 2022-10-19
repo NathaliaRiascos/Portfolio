@@ -5,10 +5,6 @@ const nextConfig = {
   },
   reactStrictMode: true,
   swcMinify: true,
-  images: {
-    loader: 'akami',
-    path: '',
-  },
   basePath: '/Portfolio',
   assetPrefix: '/Portfolio',
   env: {
