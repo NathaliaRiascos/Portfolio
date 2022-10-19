@@ -39,7 +39,6 @@ const Form = () => {
   const handleSubmit = async (e: SyntheticEvent) => {
     e.preventDefault()
     validate(e)
-    console.log(process.env.NEXT_PUBLIC_SERVICE_ID)
     if (Object.keys(errors).length !== 0) return
 
     try {
