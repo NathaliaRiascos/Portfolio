@@ -8,6 +8,7 @@ const Contact: NextPage = () => {
     <main className={stylesPanel.panel}>
       <Head>
         <title>Contacto</title>
+        <link rel='icon' href='favicon.ico' />
       </Head>  
       <header>
         <h1>Contáctame</h1>

@@ -22,6 +22,7 @@ const About: NextPage = () => {
     <main className={stylesPanel.panel}>
       <Head>
         <title>Sobre mí</title>
+        <link rel='icon' href='favicon.ico' />
       </Head>  
         <header>
           <h1>Sobre mí</h1>

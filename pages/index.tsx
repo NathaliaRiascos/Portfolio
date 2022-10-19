@@ -19,7 +19,7 @@ const Home: NextPage = () => {
     <main className={`${styles.intro} ${stylesPanel.panel}`}>     
       <Head>
         <title>Inicio</title> 
-        <link rel='icon' href='favicon.ico' />
+        <link rel='icon' href='/Portfolio/favicon.ico' />
       </Head>  
 
       <header id={styles.header}>
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
         </div>
 			</header>
       <Image
-        src='/working.gif'
+        src='/Portfolio/working.gif'
         width='300'
         height='200'
         layout='fixed'

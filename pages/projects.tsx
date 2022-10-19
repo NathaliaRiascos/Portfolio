@@ -8,6 +8,7 @@ const Projects: NextPage = () => {
     <main className={stylesPanel.panel}>
       <Head>
         <title>Proyectos</title>
+        <link rel='icon' href='favicon.ico' />
       </Head>  
       <header>
         <h1>Proyectos</h1>
