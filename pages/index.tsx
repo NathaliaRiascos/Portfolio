@@ -18,7 +18,8 @@ const Home: NextPage = () => {
   return (
     <main className={`${styles.intro} ${stylesPanel.panel}`}>     
       <Head>
-        <link rel='icon' href='favicon.ico' />
+        <title>Inicio</title> 
+        <link rel='icon' href='/favicon.ico' />
       </Head>  
 
       <header id={styles.header}>

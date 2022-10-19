@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
+import Head from 'next/head'
 
 import { Item } from 'components'
 
@@ -19,6 +20,9 @@ import {
 const About: NextPage = () => {
   return (
     <main className={stylesPanel.panel}>
+      <Head>
+        <title>Sobre mí</title>
+      </Head>  
         <header>
           <h1>Sobre mí</h1>
         </header>
