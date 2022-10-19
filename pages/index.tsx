@@ -33,7 +33,7 @@ const Home: NextPage = () => {
         </div>
 			</header>
       <Image
-        src='https://nathaliariascos.github.io/Portfolio/Portfolio/working.gif'
+        src='https://nathaliariascos.github.io/Portfolio/working.gif'
         width='300'
         height='200'
         layout='fixed'
