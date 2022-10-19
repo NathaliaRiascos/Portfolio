@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
+import Head from 'next/head'
 
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
@@ -16,6 +17,10 @@ const CVSpanish = 'https://drive.google.com/file/d/1jvjm7tEBWS118T-Sh-VyjXuVk_bV
 const Home: NextPage = () => {
   return (
     <main className={`${styles.intro} ${stylesPanel.panel}`}>     
+      <Head>
+        <link rel='icon' href={`${process.env.NEXT_PUBLIC_FAVICON}/favicon.ico`} />
+      </Head>  
+
       <header id={styles.header}>
         <div className={styles.container__links}>
           <CustomLink className={styles.link} href={GITHUB} icon={faGithub} />
