@@ -34,8 +34,8 @@ const Project = ({ data }: Project) => {
           </div>         
           
            <div className={styles.container__links}>
-            <CustomLink className={styles.link} href={data.github} text='Go Github' icon={faGithub} />
-            <CustomLink className={styles.link} href={data.website} text='Go Website' icon={faEarthAmericas} />
+             { data?.github && <CustomLink className={styles.link} href={data.github} text='Go Github' icon={faGithub} /> }
+             { data?.website && <CustomLink className={styles.link} href={data.website} text='Go Website' icon={faEarthAmericas} /> }
           </div>
         </article>
   )
