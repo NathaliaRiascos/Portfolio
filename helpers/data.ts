@@ -19,5 +19,11 @@ export const data = [
     project_url: '/images/anime_project.png',
     github: 'https://github.com/NathaliaRiascos/anime-quotes',
     website: 'https://anime-quotes-five.vercel.app/'
+  },
+   {
+    name: 'Healthy Life',
+    description: 'Aplicación web para la adquisición de hábitos desarrollada en No Country',
+    project_url: '/images/healthyLife.png',
+    website: 'https://healthy-life-c8-44.vercel.app/'
   }
 ]
