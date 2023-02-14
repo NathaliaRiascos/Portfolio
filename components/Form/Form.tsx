@@ -1,4 +1,4 @@
-import { useState, MouseEvent, ChangeEvent, SyntheticEvent } from 'react'
+import { useState, MouseEvent, ChangeEvent, SyntheticEvent, useRef } from 'react'
 import styles from './Form.module.css'
 import { ToastContainer, toast } from 'react-toastify'
 import emailjs from '@emailjs/browser'
@@ -22,8 +22,9 @@ const initialState = {
 const Form = () => {
 
   const [errors, setErrors] = useState<Error>(initialState)
+  const form = useRef()
 
-
+  const tempErrors: Error = {}
   const validate = (e: SyntheticEvent) => {
     const data = Object.fromEntries(new FormData(e.target as HTMLFormElement))
 
@@ -33,19 +34,22 @@ const Form = () => {
       if (!data[key]) tempErrors[key] = `Por favor digita tu ${key}, ${text}`
     }
 
-    setErrors(tempErrors)
   }
 
   const handleSubmit = async (e: SyntheticEvent) => {
     e.preventDefault()
     validate(e)
-    if (Object.keys(errors).length !== 0) return
+    if (Object.keys(tempErrors).length !== 0) {
+      setErrors(tempErrors)
+      return
+    }
+
 
     try {
       await emailjs.sendForm(
         process.env.NEXT_PUBLIC_SERVICE_ID, 
         process.env.NEXT_PUBLIC_TEMPLATE_ID, 
-        e.target, 
+        form.current, 
         process.env.NEXT_PUBLIC_PUBLIC_KEY
       )
       toast('Correo enviado con éxito')
@@ -57,7 +61,7 @@ const Form = () => {
   }
   return (
     <>
-      <form id={styles.form} onSubmit={handleSubmit}>
+      <form ref={form} id={styles.form} onSubmit={handleSubmit}>
         <div>
           <input
             className={styles.input}

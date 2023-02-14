@@ -11,8 +11,8 @@ import { CustomLink } from 'components'
 
 const GITHUB = 'https://github.com/NathaliaRiascos'
 const LINKEDIN = 'https://www.linkedin.com/in/nathalia-riascos-84029a200/'
-const CV = 'https://drive.google.com/file/d/19AmwzPBYKqSuWz_hZnaPGve3amhA-VCp/view?usp=sharing'
-const CVSpanish = 'https://drive.google.com/file/d/1-RjaErJ0vkbiBfPPdtQJicZ2nMUyi2JN/view?usp=sharing'
+const CV = 'https://drive.google.com/file/d/1-1ILavz7ofzkD_iBZFRVKJ8VlzwclCeD/view?usp=sharing'
+const CVSpanish = 'https://drive.google.com/file/d/13sv7aNQTisM_iwZHMKi67ykChKce4evR/view?usp=sharing'
 
 const Home: NextPage = () => {
   return (
