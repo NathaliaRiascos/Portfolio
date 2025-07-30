@@ -30,11 +30,11 @@ const About: NextPage = () => {
         
         <section>
           <div className={styles.container__info}>
-          <p>Hola, Soy Nathalia Riascos, una estudiante de Universidad del Valle.<br />
-            Desde inicios de mi carrera tuve un gran interés por las interfaces de usuario,
-            porque éstas fueran agradables e intuitivas. 
-            Al final acababa diseñando y desarrollando el “frontend” de los proyectos que hacía con mis compañeros en la U 
-            aún sin saber que existía este rol en el mundo del desarrollo web.<br />
+          <p>Hola, soy Nathalia, desarrolladora frontend especializada en construir interfaces atractivas, intuitivas y centradas en la experiencia del usuario.
+          Desde los primeros proyectos académicos descubrí mi afinidad por el diseño de interfaces y la experiencia de usuario,
+            lo que me llevó naturalmente al mundo del desarrollo frontend. Comencé por curiosidad, 
+            y con el tiempo encontré una verdadera pasión en crear productos web que no solo se vean bien, sino que también funcionen con fluidez y claridad.
+            <br />
           </p>
           
             <Image
@@ -48,10 +48,10 @@ const About: NextPage = () => {
           </div>
           <p>
             <br />
-            Cuando descubrí este mundo web hace dos años,
-            comencé aprendiendo por curiosidad y poco a poco me fui sumergiendo más.
-            Terminé encontrando algo que me encanta hacer y en cual me estoy especializando que es el desarrollo Frontend.<br />
-            He ido aprendiendo poco a poco sobre la marcha UX/UI y las siguientes tecnologías:
+            Hoy, con más de dos años de experiencia, he trabajado en proyectos reales que van desde aplicaciones colaborativas hasta soluciones personalizadas para clientes, 
+            utilizando tecnologías como React, Vue.js, TypeScript, Tailwind, Redux Toolkit, entre otras. 
+            También tengo experiencia trabajando en equipos multidisciplinarios, aplicando buenas prácticas de desarrollo, accesibilidad y diseño responsivo.
+            Actualmente me enfoco en seguir creciendo profesionalmente, explorando herramientas modernas y aportando soluciones efectivas en cada proyecto que desarrollo.
           </p>
         </section>
       <section className={styles.skills}>
